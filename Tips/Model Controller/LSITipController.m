@@ -7,7 +7,7 @@
 //
 
 #import "LSITipController.h"
-#import "LSITip.h"
+#import "../Model/LSITip.h"
 
 @interface LSITipController() {
     NSMutableArray *_internalTips;
