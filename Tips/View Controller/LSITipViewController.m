@@ -20,20 +20,24 @@
 
 @implementation LSITipViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
 }
 
-- (void)calculateTip {
+- (void)calculateTip
+{
     // TODO: Calculate the tip using the values from the UI
 }
 
-- (void)updateViews {
+- (void)updateViews
+{
     // TODO: Use the model data to update the views
 }
 
-- (void)saveTipNamed:(NSString *)name {
+- (void)saveTipNamed:(NSString *)name
+{
     
     // TODO: Save the tip to the controller and update tableview
 
@@ -47,15 +51,18 @@
 
 // MARK: - UITableViewDataSource
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
 //}
 //
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
 //}
 
 // MARK: - UITableViewDelegate
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
 
 // TODO: Load the selected tip from the controller
 
@@ -63,7 +70,8 @@
 
 // MARK: - Alert Helper
 
-- (void)showSaveTipAlert {
+- (void)showSaveTipAlert
+{
     UIAlertController *alert = [UIAlertController
                                 alertControllerWithTitle:@"Save Tip"
                                 message:@"What name would you like to give to this tip?"
