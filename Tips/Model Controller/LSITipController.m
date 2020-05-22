@@ -13,8 +13,6 @@
     NSMutableArray *_internalTips;
 }
 
-
-
 @end
 
 @implementation LSITipController
