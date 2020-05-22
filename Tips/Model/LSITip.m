@@ -16,7 +16,7 @@
                tipPercentage:(double)aTipPercentage
 {
     if (self = [super init]) {
-        _name = aName; // the underscore accesses the place in memory and overrides the property even if it is readonly
+        _name = aName.copy; // the underscore accesses the place in memory and overrides the property even if it is readonly
         _total = aTotal; // so this should only be done in an initializer
         _splitCount = aSplitCount;
         _tipPercentage = aTipPercentage;
