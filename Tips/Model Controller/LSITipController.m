@@ -8,6 +8,14 @@
 
 #import "LSITipController.h"
 
+@interface LSITipController() {
+    NSMutableArray *_internalTips;
+}
+
+
+
+@end
+
 @implementation LSITipController
 
 
