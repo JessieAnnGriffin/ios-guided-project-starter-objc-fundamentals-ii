@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oP8-A4-c0t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oP8-A4-c0t">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,6 +139,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RQC-Sa-V0t"/>
                     </view>
+                    <connections>
+                        <outlet property="percentageLabel" destination="DMG-Uo-Xic" id="jgX-pO-w6Z"/>
+                        <outlet property="percentageSlider" destination="kNt-id-Gqe" id="BCh-Ue-sqD"/>
+                        <outlet property="splitLabel" destination="6bP-jL-21Q" id="oPI-m7-Q6o"/>
+                        <outlet property="splitStepper" destination="Aqe-rd-BYX" id="k9v-xm-Cwm"/>
+                        <outlet property="tableView" destination="GwR-Pd-0HM" id="DV2-R9-28s"/>
+                        <outlet property="tipLabel" destination="SwS-gX-2WU" id="Pi1-aP-Mgn"/>
+                        <outlet property="totalTextField" destination="Dtn-8P-b8p" id="Rnh-XM-GjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8p-fq-xn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
