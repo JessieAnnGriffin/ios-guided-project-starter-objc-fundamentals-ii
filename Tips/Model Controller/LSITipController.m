@@ -30,4 +30,11 @@
     return _internalTips.copy;
 }
 
+- (NSUInteger)tipCount
+{
+    return _internalTips.count;
+}
+
+
+
 @end
