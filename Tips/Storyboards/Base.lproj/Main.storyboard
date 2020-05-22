@@ -125,6 +125,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oP8-A4-c0t" id="AFF-xj-KcZ"/>
+                                    <outlet property="delegate" destination="oP8-A4-c0t" id="nVW-aQ-Gex"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
