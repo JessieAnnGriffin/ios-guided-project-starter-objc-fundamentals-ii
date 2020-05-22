@@ -8,6 +8,7 @@
 
 #import "LSITipViewController.h"
 #import "LSITipController.h"
+#import "LSITip.h"
 
 @interface LSITipViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -90,22 +91,31 @@
 
 // MARK: - UITableViewDataSource
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.tipController.tipCount;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TipCell" forIndexPath:indexPath];
+    LSITip *tip = [_tipController tipAtIndex:indexPath.row];
+    cell.textLabel.text = tip.name;
+    return cell;
+}
 
 // MARK: - UITableViewDelegate
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
 
-// TODO: Load the selected tip from the controller
-
-//}
+    LSITip *tip = [self.tipController tipAtIndex:indexPath.row];
+    self.total = tip.total;
+    self.split = tip.splitCount;
+    self.percentage = tip.tipPercentage;
+    [self updateViews];
+    [self calculateTip];
+}
 
 // MARK: - Alert Helper
 
